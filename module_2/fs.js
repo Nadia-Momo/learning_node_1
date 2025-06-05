@@ -10,6 +10,7 @@ console.log("Line 3");
 const data=fs.readFileSync("./hello.txt",{encoding:"utf-8"});
 console.log("Line 4");
 console.log(data);
+console.log("task 1");
 fs.readFile("./hello.txt",{encoding:"utf-8"},(err,data)=>{
     if(err){
         console.error("Error reading file",err);
@@ -17,3 +18,4 @@ fs.readFile("./hello.txt",{encoding:"utf-8"},(err,data)=>{
     }
     console.log("File contents:",data);
 })
+console.log("task 3");
